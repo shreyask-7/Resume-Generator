@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="stylehome.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="homepage.html" id="navbar__logo">KamiResume</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="homepage.html#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="homepage.html#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="homepage.html#Teams" class="navbar__links" id="Teams-page"
+              >Our Team</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="homepage.html#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   <!-- Navbar Ends -->
+
+   <!-- Contact form Start -->
+   <div class="con_container">
+   <section class="contact">
+
+    <form action="javascript:sendmail()" method="POST">
+      <h5 class="headf">Contact Form</h5>
+        <input type="text" class="box" placeholder=" Your name" id="Name"> 
+        <input type="email" class="box" placeholder=" E-mail address" id="usermail"> 
+        <input type="text" class="box" placeholder=" Enter subject here" id="Subject">
+        <textarea name="Message" id="Message" cols="30" rows="10" class="box message" placeholder=" Let us know how we can help you!" ></textarea>
+    
+        <button type="submit" class="subbtn">SEND MESSAGE</button>
+    
+    </form>
+    
+    <div class="content">
+    
+        <h3>Contact us if you need any help!</h3>
+        <p>Our Customer care will assist you with any issues you're facing.</p>
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i> Pillai College of Engineering
+        </div>
+        <div class="icons">
+            <i class="fas fa-globe"></i> www.kamiresume.com
+        </div>
+        <div class="icons">
+            <i class="fas fa-phone"></i> +91-2929292921
+        </div>
+    
+    </div>
+
+</section>
+</div>
+
+
+    <!-- Footer Starts -->
+    <div class="footer__container">
+
+      <section class="social__media">
+        <div class="social__media--wrap">
+          
+          <p class="website__rights">© KAMINARIMON 2021. All rights reserved</p>
+
+        <div class="footer__about">
+            <a href="homepage.html#about" >About us</a>
+
+            <a href="contact.html" >Contact us</a>
+
+            <a href="terms&con.html" >Terms & Conditions</a>
+
+            <a href="privacy.html" >Privacy policy</a>
+
+          </div> 
+
+
+          <div class="social__icons">
+            
+                <a href="https://www.instagram.com/pillaiscollege/" class="social__icon--link"
+                ><i class="fab fa-instagram"></i
+                ></a>
+            
+                <a href="https://www.linkedin.com/school/pillaiengineering/" class="social__icon--link"
+                ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://twitter.com/" class="social__icon--link"
+                ><i class="fab fa-twitter"></i
+                ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Ends  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+             function sendmail(){
+    
+              var name = $('#Name').val();
+              var email = $('#usermail').val();
+              var subject = $('#Subject').val();
+              var message = $('#Message').val();
+
+              var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+
+    Email.send({
+      SecureToken:"c9c11eaa-67de-4edc-b9a9-c6e284a7cc6b",
+      To: 'resumifycare@gmail.com',
+      From: "demoresumify@gmail.com",
+      Subject: "New message on contact from "+name,
+      Body: Body
+    }).then(
+      message =>{
+        if(message=='OK'){
+        alert('Your mail has been sent. Thank you for Contacting Us.');
+        }
+        else{
+          console.error (message);
+          alert('There is error at sending message. ')
+          
+        }
+
+      }
+    );
+
+  }
+
+   </script>
+  </body>
+</html>

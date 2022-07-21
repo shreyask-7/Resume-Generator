@@ -1,0 +1,219 @@
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+	margin-left: 30px;
+     width: 250px;
+     height: 250px; 
+     /* overflow: hidden; */
+    /* -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;  */
+    border-radius: 50%;
+	border :5px black;
+}
+
+#profile-container img {
+    width: 250px;
+    height: 250px;
+	border-radius: 50%;
+	border :5px black;
+	
+}
+cv-form{
+    /*display: none;*/
+	
+}
+
+#cv-template{
+    /*display: none;*/
+	isolation: isolate;
+}
+
+.myimg {
+	border-radius: 50%;
+	width: 225px;
+}
+.resume-form{
+	/* background-image: url("/app/images/img1.jpg	");
+	background-repeat: no-repeat;
+	background-size: cover; */
+	color: #ff031c;
+}
+.background {
+	background: linear-gradient(to top, #10027a, #1668f5);
+	color: #ffffff;
+}
+
+#cv-template {
+	/* border: 3px solid black; */
+	margin-top: 50px;
+	box-shadow: 0px 0px 10px 10px rgb(143, 143, 143);
+	max-width: 1000px;
+	isolation: isolate;
+}
+
+
+.background1a{
+	background-color: #ffffff;
+}
+
+.background1b{
+	background-color: #8a8888;
+	color: #ffffff;
+}
+
+.background1c{
+	background-color: #aba446;
+}
+
+.background1d{
+	background-color: #545454;
+	color: #ffffff;
+}
+
+.background1e{
+	background-color: #292828;
+	color: #ffffff;
+}
+
+.bgcolor {background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+	  }
+	  @keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}	  
+
+div{
+	padding: 5px;
+}
+
+.name{
+	text-align: center;
+	background-color: #c4ae06;
+	padding: 5px;
+	margin-top: 40px;
+}
+
+.proname{
+	background-color: black;
+	background-size: 30% ;
+	text-align: justify;
+	color: red;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+
+.background1f{
+	background-color: #3a3b38;
+	color: #ffffff;
+}
+
+.cv-head{
+	background-color: black;
+	background-size: 75%;
+	color: #ffffff;
+	text-align: left;
+}
+
+.profileimg2{
+	width: 200px;
+	border: 2px solid black;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin: 10px;
+	background-color: #ffffff;
+}
+
+.info{
+	background-color: #f09116;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.info h4{
+	text-align: initial;
+}
+
+.title-decoration{
+	text-decoration: underline;
+	position: relative;
+}
+#cv-form{
+	margin-top: 50px;
+	box-shadow: 0px 0px 10px 10px rgb(143, 143, 143);
+	max-width: 1400px;
+}
+
+.resume-form{
+	background-image: url("img1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ff031c;
+}
+
+.background4{
+	background-color: black;
+	color: white;
+}
+
+.myimg4{
+	border-radius: 50%;
+	width: 225px;
+	border: 5px solid aqua;
+	margin-bottom: 10px;
+}
+
+.format4-head{
+	background-color: #43c7f0;
+	color: white;
+}
+.background2{
+    background-color: #00203FFF;
+    color: white;
+}
+
+.myimg2{
+    border-radius: 50%;
+    width: 225px;
+    border: 5px solid aqua;
+    margin-bottom: 10px;
+}
+
+.format2-head{
+    background-color: #ADEFD1FF;
+    color: white;
+}
+.background3{
+    background-color: #12fa0a(184, 144, 13);
+    color:black;
+}
+
+.myimg3{
+    border-radius: 50%;
+    width: 225px;
+    border: 5px solid aqua;
+    margin-bottom: 10px;
+}
+
+.format3-head{
+    background-color:grey;
+    color: white;
+}
